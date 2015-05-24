@@ -1,0 +1,253 @@
+@media (min-width: 1600px) {
+    .container {
+        width: 1580px;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: #d8d8d8;
+    color: #6f6f6f;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.container {
+    background-color: white;
+    padding: 0;
+}
+
+.sixteen-nine {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+}
+
+.hero-text-container .sixteen-nine > div {
+    display: table;
+}
+
+.sixteen-nine > div {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: calc(100% + 30px);
+    -webkit-filter: blur(0.6px) sepia(90%) brightness(70%);
+}
+
+.hero-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.hero-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hero-text {
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 51px;
+}
+
+.hero-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.hero-arrow:before,
+.hero-arrow:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 0;
+    border-bottom: 45px solid white;
+    width: 50%;
+}
+
+.hero-arrow:before {
+    border-left: 0;
+    border-right: 45px solid transparent;
+    left: 0;
+}
+
+.hero-arrow:after {
+    right: 0;
+    border-right: 0;
+    border-left: 45px solid transparent;
+}
+
+.features-container {
+    height: 1000px;
+}
+
+.download-button .glyphicon {
+    margin-right: 10px;
+}
+
+.download-button {
+    margin-top: 40px;
+}
+
+* {
+    transition: all 150ms;
+}
+
+.intro {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    font-size: 18px;
+}
+
+.intro .logo-column,
+.intro .text-column {
+    padding: 50px;
+}
+
+.intro .logo-column {
+    text-align: right;
+}
+
+.intro .text-column {
+    padding-right: 20%;
+}
+
+.intro .subtext {
+    margin: 0 0 40px;
+}
+
+.features {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.features .emote {
+    vertical-align: -7px;
+}
+
+.features-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.features-image-container {
+    perspective: 1200px;
+}
+
+.features-image {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    /*transform: rotateY(4deg) rotateX(14deg);*/
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.feature {
+    width: 410px;
+    position: absolute;
+    border-top: 2px solid #4aaf86;
+}
+
+.feature:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #4aaf86;
+    border-radius: 50%;
+}
+
+.feature.right:after {
+    left: 0;
+}
+
+.feature.left {
+    right: 62%;
+    padding-right: 125px;
+}
+
+.feature.right {
+    left: 62%;
+    padding-left: 125px;
+    text-align: right;
+}
+
+.feature h6 {
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.f1 {top: 79px;}
+.f2 {top: 186px;}
+.f4 {top: 68px;}
+.f5 {top: 238px;}
+.f6 {top: 433px;}
+
+.download-links {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.download-links .title {
+    margin: 60px;
+}
+
+.download-links .btn {
+    margin-top: 10px;
+}
+
+.download-links .beta {
+    color: #ae0000;
+    margin-top: -63px;
+    margin-left: 287px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.download-links {
+    text-align: center;
+}
+
+.platforms {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.platform-picture {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    opacity: 0.7;
+}
+
+.footer {
+    height: 800px;
+    background-color: #adb0b2;
+}
