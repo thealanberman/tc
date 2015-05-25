@@ -1,7 +1,7 @@
 $.getJSON('https://api.twitch.tv/kraken/streams?limit=1&callback=?', function(data) {
 	if (data) {
 		var streamer = data.streams[0].channel.name;
-		var obj = '<object class="video" type="application/x-shockwave-flash" height="255" width="400" bgcolor="#000000">'+
+		var obj = '<object class="video-object" type="application/x-shockwave-flash" height="255" width="400" bgcolor="#000000">'+
 			'<param name="allowFullScreen" value="true">'+
 			'<param name="allowScriptAccess" value="always">'+
 			'<param name="allowNetworking" value="all">'+

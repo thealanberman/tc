@@ -40,7 +40,7 @@ h1 {
     overflow: hidden;
 }
 
-.video {
+.video-object {
     width: 100%;
     height: calc(100% + 30px);
     -webkit-filter: blur(0.6px) sepia(90%) brightness(70%);
@@ -212,6 +212,7 @@ h1 {
 .download-links {
     padding-top: 40px;
     padding-bottom: 80px;
+    text-align: center;
 }
 
 .download-links .title {
@@ -231,8 +232,8 @@ h1 {
     font-size: 15px;
 }
 
-.download-links {
-    text-align: center;
+.download-links .release-name-box {
+    margin: 45px;
 }
 
 .platforms {
@@ -249,5 +250,6 @@ h1 {
 
 .footer {
     height: 800px;
-    background-color: #adb0b2;
+    padding-top: 150px;
+    text-align: center;
 }
