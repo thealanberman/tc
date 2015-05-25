@@ -253,3 +253,12 @@ h1 {
     padding-top: 150px;
     text-align: center;
 }
+
+.footer .disclaimer {
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.footer img {
+    vertical-align: -3px;
+}
