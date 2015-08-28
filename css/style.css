@@ -40,9 +40,8 @@ h1 {
     overflow: hidden;
 }
 
-.video-object {
+.video-section {
     width: 100%;
-    height: calc(100% + 30px);
     -webkit-filter: blur(0.6px) sepia(90%) brightness(70%);
 }
 
@@ -221,15 +220,6 @@ h1 {
 
 .download-links .btn {
     margin-top: 10px;
-}
-
-.download-links .beta {
-    color: #ae0000;
-    margin-top: -63px;
-    margin-left: 287px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 15px;
 }
 
 .download-links .release-name-box {
