@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-    font-family: 'Raleway';
-    background-color: #d8d8d8;
+    font-family: 'Raleway', sans-serif;
     color: #6f6f6f;
+    background-color: #F7F7F7;
 }
 
 h1 {
@@ -20,8 +20,8 @@ h1 {
 }
 
 .container {
-    background-color: white;
     padding: 0;
+    width: 1300px;
 }
 
 .sixteen-nine {
@@ -150,15 +150,10 @@ h1 {
     height: 100%;
 }
 
-.features-image-container {
-    perspective: 1200px;
-}
-
 .features-image {
     width: 600px;
     margin: 0 auto;
     display: block;
-    /*transform: rotateY(4deg) rotateX(14deg);*/
     box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -187,12 +182,12 @@ h1 {
 
 .feature.left {
     right: 62%;
-    padding-right: 125px;
+    padding-right: 160px;
 }
 
 .feature.right {
     left: 62%;
-    padding-left: 125px;
+    padding-left: 160px;
     text-align: right;
 }
 
@@ -204,9 +199,18 @@ h1 {
 
 .f1 {top: 79px;}
 .f2 {top: 186px;}
+.f3 {top: 348px;}
 .f4 {top: 68px;}
 .f5 {top: 238px;}
 .f6 {top: 433px;}
+
+.feature.f3 {
+    border-top: none;
+}
+
+.feature.f3:after {
+    display: none;
+}
 
 .download-links {
     padding-top: 40px;
@@ -220,6 +224,7 @@ h1 {
 
 .download-links .btn {
     margin-top: 10px;
+    width: 154px;
 }
 
 .download-links .release-name-box {
