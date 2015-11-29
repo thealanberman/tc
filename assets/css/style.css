@@ -24,94 +24,74 @@ h1 {
     width: 1300px;
 }
 
-.sixteen-nine {
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 */
-    position: relative;
-}
-
-.hero-text-container .sixteen-nine > div {
-    display: table;
-}
-
-.sixteen-nine > div {
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    overflow: hidden;
-}
-
-.video-section {
-    width: 100%;
-    -webkit-filter: blur(0.6px) sepia(90%) brightness(70%);
-}
-
-.hero-table {
-    width: 100%;
-    height: 100%;
-    display: table;
-}
-
-.hero-table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.hero-text {
-    color: white;
-    background-color: rgba(0, 0, 0, .8);
-    padding: 51px;
-}
-
-.hero-arrow {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 45px;
-}
-
-.hero-arrow:before,
-.hero-arrow:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    top: 0;
-    height: 0;
-    border-bottom: 45px solid white;
-    width: 50%;
-}
-
-.hero-arrow:before {
-    border-left: 0;
-    border-right: 45px solid transparent;
-    left: 0;
-}
-
-.hero-arrow:after {
-    right: 0;
-    border-right: 0;
-    border-left: 45px solid transparent;
-}
-
-.features-container {
-    height: 1000px;
-}
-
-.download-button .glyphicon {
-    margin-right: 10px;
-}
-
-.download-button {
-    margin-top: 40px;
-}
-
 * {
     transition: all 150ms;
 }
 
+.demo {
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+/* Browser mockup code
+ * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+ * Live example: https://updown.io
+ */
+
+.demo .browser-mockup {
+    border-top: 2em solid rgba(230, 230, 230, 0.7);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+    border-radius: 3px 3px 0 0
+}
+
+.demo .browser-mockup:before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -1.25em;
+    left: 1em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #f44;
+    box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.demo .browser-mockup.with-tab:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -2em;
+    left: 5.5em;
+    width: 20%;
+    height: 0em;
+    border-bottom: 2em solid white;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+}
+
+.demo .browser-mockup.with-url:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -1.6em;
+    left: 5.5em;
+    width: calc(100% - 6em);
+    height: 1.2em;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.demo .browser-mockup > * {
+    display: block;
+}
+
 .intro {
-    padding-top: 100px;
     padding-bottom: 120px;
     font-size: 18px;
 }
